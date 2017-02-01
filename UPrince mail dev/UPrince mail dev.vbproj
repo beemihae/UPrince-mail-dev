@@ -46,9 +46,12 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="UPrince mail devManifest\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c1eb4545-e793-436b-a957-c7e148486ddf}</SharePointProjectItemId>
     </None>
+    <Content Include="GenericError.html" />
+    <Content Include="robots.txt" />
     <Content Include="UPrince mail devManifest\UPrince mail dev.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
     </Content>
@@ -66,6 +69,24 @@
       <RoleName>UPrince mail devWeb</RoleName>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\AntiXssLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SecureDefaults, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SecureDefaults.AspNet.1.0.0\lib\SecureDefaults.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SecureDefaultsSsl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SecureDefaults.AspNet.Ssl.1.0.0\lib\SecureDefaultsSsl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

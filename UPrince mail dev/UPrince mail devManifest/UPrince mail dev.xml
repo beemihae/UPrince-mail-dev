@@ -18,13 +18,13 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="~remoteAppUrl/AddInRead/Home/Home.html"/>
+        <SourceLocation DefaultValue="https://uprincemaildev.azurewebsites.net/AddInRead/Home/Home.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="~remoteAppUrl/AddInCompose/Home/Home.html"/>
+        <SourceLocation DefaultValue="https://uprincemaildev.azurewebsites.net/AddInCompose/Home/Home.html"/>
       </DesktopSettings>
     </Form>
   </FormSettings>
